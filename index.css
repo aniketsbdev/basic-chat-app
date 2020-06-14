@@ -1,0 +1,93 @@
+html * {
+    font-size: 14px !important;
+    color: #000 !important;
+    font-family: Roboto !important;
+}
+
+body {
+    display: flex;
+    height: 500px;
+    width: 300px;
+    flex-direction: column;
+    outline: 5px auto black;
+    padding-top: 3px;
+}
+
+footer {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.message-text {
+    float: left;
+}
+
+.chat-area {
+    height: inherit;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.send-message {
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.single-message {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+    width: fit-content;
+    float: right;
+    margin: 4px 4px 10px 4px;
+    clear: both;
+    max-width: inherit;
+    word-break: break-all;
+
+    /* border: 1px solid lightblue;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: 4px 4px 10px 4px;
+    float: right;
+    width: fit-content;
+    min-height: 1px; */
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    background-color: #f1f3f4;
+    display: inline-block;
+    padding: 3px 4px;
+    cursor: pointer;
+}
+
+.image-message {
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(36, 151, 151);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

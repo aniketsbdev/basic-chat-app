@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>Basic Chat App</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="chat-area" id="chat-area">
+
+    </div>
+    <footer>
+        <form onsubmit="return getMessage('message', 'text-message')" class="send-message">
+            <input type="text" id="message" placeholder="Enter Message Here">
+            <label class="custom-file-upload">
+                Upload
+                <input type="file"  name="file" id="uploadFile" onchange="getFile(event)">
+            </label>
+            <button type="submit">
+                Send
+            </button>
+
+        </form>
+    </footer>
+</body>
+
+</html>
